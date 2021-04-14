@@ -254,7 +254,7 @@ int main()
 ##### Exercise 1.21
 > 读取两个isbn相同的Sales_item对象，输出它们的和。
 ```C++
-// Get-Content .\data\add_item | ./ex1_21
+// Get-Content .\data\1_21.in | ./ex1_21
 int main()
 {
     Sales_item item1, item2;
@@ -313,7 +313,7 @@ int main()
 ##### Exercise 1.24
 > 验证1.23编写的程序的结果。
 ```
-Get-Content  .\data\book_sales |  ./ex1_23
+Get-Content  .\data\1_23.in |  ./ex1_23
 0-201-70353-X: 1
 0-201-82470-1: 1
 0-201-88954-4: 4
