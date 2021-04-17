@@ -3,7 +3,9 @@
 //
 //  Created by aozy on 04/14/2021
 //
-//  @Brief
+//  @Brief  In the program on page 349 that erased a range of elements,
+//          what happens ifelem1 and elem2 are equal?
+//          What if elem2 or both elem1 and elem2 are theoff-the-end iterator?
 
 #include <iostream>
 #include <vector>

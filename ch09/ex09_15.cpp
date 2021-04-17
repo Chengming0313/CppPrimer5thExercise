@@ -1,3 +1,10 @@
+//
+//  ex09_15.cpp
+//
+//  Created by aozy on 04/17/2021
+//
+//  @Brief  Write a program to determine whether two vector<int>s are equal.
+
 #include <iostream>
 #include <vector>
 

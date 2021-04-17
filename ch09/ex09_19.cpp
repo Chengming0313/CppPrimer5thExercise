@@ -12,6 +12,7 @@
 #include <string>
 
 int main() {
+    // 只需要将容器类型换成 std::list 即可。
     std::list<std::string> lst;
     for (std::string str; std::cin >> str;) {
         lst.push_back(str);

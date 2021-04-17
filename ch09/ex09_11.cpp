@@ -1,3 +1,12 @@
+//
+//  ex09_11.cpp
+//
+//  Created by aozy on 04/17/2021
+//
+//  @Brief  Show an example of each of the six ways to create
+//          and initialize a vector. Explain what values each
+//          vector contains.
+
 #include <iostream>
 #include <vector>
 
