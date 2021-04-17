@@ -283,6 +283,7 @@ capacity : 100, size : 10
 > What, if any, restrictions does using the version of resize that takes a single argument place on the element type?
 
 resize(n)要求容器的元素类型必须为内置类型，或者有默认构造函数（包括合成的以及自定义的）。
+
 ---
 
 ## 9.3.6 节练习
@@ -391,6 +392,7 @@ svec.resize(svec.size() + svec.size() / 2);
 > Given that you want to read a character at a time into a string, and you know that you need to read at least 100 characters, how might you improve the performance of your program?
 
 reserve(100)
+
 ---
 
 ## 9.5.2 节练习
