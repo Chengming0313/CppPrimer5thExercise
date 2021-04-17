@@ -26,10 +26,9 @@ gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
 
 优先级：vector -> deque -> list
 (a) vector : 先在尾部插入, 然后排序
-
 (b) deque: 在尾部插入，头部删除
-
 (c) vector, 元素较小且数目较多, 不要使用 list 或者 forward_list，
+
 ---
 
 ## 9.2 节练习
