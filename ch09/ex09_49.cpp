@@ -2,7 +2,7 @@
 //  ex09_49.cpp
 //  cpp primer 5th exercise 9.49
 //
-//  Created by aozy on 04/17/2021
+//  Created by Tang Chengming on 04/17/2021
 //
 //  @Brief  A letter has an ascender if, as with d or f, part of the letter extends
 //          above the middle of the line.

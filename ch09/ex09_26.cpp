@@ -2,7 +2,7 @@
 //  ex09_26.cpp
 // cpp primer 5th exercise 9.26
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief  Using the following definition of ia, copy ia into a vector and into a list.
 //          Use the single-iterator form of erase to remove the elements with odd values from your

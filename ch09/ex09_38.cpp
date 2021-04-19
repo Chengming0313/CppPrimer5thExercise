@@ -1,7 +1,7 @@
 //
 //  ex09_38.cpp
 //
-//  Created by aozy on 04/15/2021
+//  Created by Tang Chengming on 04/15/2021
 //
 //  @Brief  Write a program to explore how vectors grow in the library you use.
 

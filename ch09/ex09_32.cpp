@@ -2,7 +2,7 @@
 //  p316.cpp
 //  cpp primer 5th page 316
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief  In the program on page 354 would it be legal to write the call to insert as follows?
 //          If not, why not?

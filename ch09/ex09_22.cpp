@@ -2,7 +2,7 @@
 //  ex09_22.cpp
 //  cpp primer 5th exercise 9.22
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief insert double target before the target for the mid of the vector<int>
 

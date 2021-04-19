@@ -1,7 +1,7 @@
 //
 //  ex09_47_2.cpp
 //
-//  Created by aozy on 04/16/2021
+//  Created by Tang Chengming on 04/16/2021
 //
 //  @Brief  Write a program that finds each numeric character
 //          and then each alphabetic character in the string "ab2c3d7R4E6".

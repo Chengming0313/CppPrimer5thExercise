@@ -1,7 +1,7 @@
 //
 //  ex09_14.cpp
 //
-//  Created by aozy on 04/17/2021
+//  Created by Tang Chengming on 04/17/2021
 //
 //  @Brief  Write a program to assign the elements from a list of char* pointers
 //          to C-style character strings

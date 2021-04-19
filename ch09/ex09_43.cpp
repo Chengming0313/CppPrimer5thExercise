@@ -2,7 +2,7 @@
 //  ex09_43.cpp
 //  cpp primer 5th exercise 9.43
 //
-//  Created by aozy on 04/16/2021
+//  Created by Tang Chengming on 04/16/2021
 //
 //  @Brief  Write a function that takes three strings, s, oldVal, and newVal.
 //          Using iterators, and the insert and erase functions replace

@@ -2,7 +2,7 @@
 //  ex09_31.cpp
 //  cpp primer 5th exercise 9.31
 //
-//  Created by aozy on 04/15/2021
+//  Created by Tang Chengming on 04/15/2021
 //
 //  @Brief  The program on page 354 to remove even-valued elements and
 //          duplicate odd ones will not work on a list or forward_list. Why?

@@ -2,7 +2,7 @@
 //  ex09_19.cpp
 //  cpp primer 5th exercise 9.19
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief  Rewrite the program from the previous exercise to use a list.
 //          List the changes you needed to make.

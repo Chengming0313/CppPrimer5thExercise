@@ -1,7 +1,7 @@
 //
 //  ex09_42.cpp
 //
-//  Created by aozy on 04/16/2021
+//  Created by Tang Chengming on 04/16/2021
 //
 //  @Brief  Given that you want to read a character at a time into a string, and you know that you
 //          need to read at least 100 characters, how might you improve the performance of your

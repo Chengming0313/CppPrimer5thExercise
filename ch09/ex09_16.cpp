@@ -2,7 +2,7 @@
 //
 //  ex09_16.cpp
 //
-//  Created by aozy on 04/17/2021
+//  Created by Tang Chengming on 04/17/2021
 //
 //  @Brief  Repeat the previous program, but compare elements in a
 //          list<int> to a vector<int>.

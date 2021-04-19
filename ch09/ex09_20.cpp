@@ -1,7 +1,7 @@
 //
 //  ex09_20.cpp
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief  Write a program to copy elements from a list<int> into two deques.
 //          The even-valued elements should go into one deque and the odd ones into the other.

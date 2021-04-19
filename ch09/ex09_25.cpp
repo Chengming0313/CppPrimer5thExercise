@@ -1,7 +1,7 @@
 //
 //  ex09_25.cpp
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief  In the program on page 349 that erased a range of elements,
 //          what happens ifelem1 and elem2 are equal?

@@ -2,7 +2,7 @@
 //  ex09_51.cpp
 //  cpp primer 5th exercise 9.51
 //
-//  Created by aozy on 04/17/2021
+//  Created by Tang Chengming on 04/17/2021
 //
 //  @Brief  Write a class that has three unsigned members representing year,
 //          month, and day. Write a constructor that takes a string representing

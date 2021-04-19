@@ -1,7 +1,7 @@
 //
 //  ex09_24.cpp
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief  Write a program that fetches the first element in a vector using at,
 //          the subscript operator, front, and begin. Test your program on an empty vector.

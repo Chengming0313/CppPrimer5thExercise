@@ -1,7 +1,7 @@
 //
 //  ex09_13.cpp
 //
-//  Created by aozy on 04/17/2021
+//  Created by Tang Chengming on 04/17/2021
 //
 //  @Brief  How would you initialize a vector<double> from a list<int>?
 //          From a vector<int>?

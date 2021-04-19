@@ -2,7 +2,7 @@
 //  ex09_52.cpp
 //  cpp primer 5th exercise 9.52
 //
-//  Created by aozy on 04/17/2021
+//  Created by Tang Chengming on 04/17/2021
 //
 //  @Brief  Use a stack to process parenthesized expressions.
 //          When you see an open parenthesis, note that it was seen.
@@ -15,7 +15,7 @@
 #include <string>
 
 int main() {
-    std::string      expr{ "This is (aozy) !" };
+    std::string      expr{ "This is (Tang Chengming) !" };
     std::stack<char> stk;
 
     bool inParenthesis = false;

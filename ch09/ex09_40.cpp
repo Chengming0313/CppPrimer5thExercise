@@ -2,7 +2,7 @@
 //  ex09_40.cpp
 //  cpp primer 5th exercise 9.40
 //
-//  Created by aozy on 04/15/2021
+//  Created by Tang Chengming on 04/15/2021
 //
 //  @Brief  If the program in the previous exercise reads 256 words, what is its likely capacity
 //          after it is resized? What if it reads 512? 1, 000? 1, 048?
@@ -17,7 +17,7 @@ int main() {
 
     // 256 512 1000 1024
     for (int i = 0; i < 1000; ++i)
-        svec.push_back("aozy!!!");
+        svec.push_back("Tang Chengming!!!");
 
     svec.resize(svec.size() + svec.size() / 2);
 

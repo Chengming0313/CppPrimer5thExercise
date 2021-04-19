@@ -2,7 +2,7 @@
 //  ex09_27.cpp
 //  cpp primer 5th exercise 9.27
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief  Write a program to find and remove the odd-valued
 //          elements in a forward_list<int>.

@@ -2,7 +2,7 @@
 //  ex09_44.cpp
 //  cpp primer 5th exercise 9.44
 //
-//  Created by aozy on 04/16/2021
+//  Created by Tang Chengming on 04/16/2021
 //
 //  @Brief  Rewrite the previous function using an index and replace.
 

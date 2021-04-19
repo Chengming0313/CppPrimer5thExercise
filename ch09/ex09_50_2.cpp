@@ -2,7 +2,7 @@
 //  ex09_50_2.cpp
 //  cpp primer 5th exercise 9.50.2
 //
-//  Created by aozy on 04/17/2021
+//  Created by Tang Chengming on 04/17/2021
 //
 //  @Brief  Write a program to process a vector<string>s whose elements represent integral values.
 //          Produce the sum of all the elements in that vector.

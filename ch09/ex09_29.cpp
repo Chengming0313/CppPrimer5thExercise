@@ -1,7 +1,7 @@
 //
 //  ex09_29.cpp
 //
-//  Created by aozy on 04/15/2021
+//  Created by Tang Chengming on 04/15/2021
 //
 //  @Brief  Given that vec holds 25 elements, what does vec.resize(100) do?
 //          What if we next wrote vec.resize(10)?

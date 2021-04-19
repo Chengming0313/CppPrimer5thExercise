@@ -2,7 +2,7 @@
 //  ex09_41.cpp
 // cpp primer 5th exercise 9.41
 //
-//  Created by aozy on 04/16/2021
+//  Created by Tang Chengming on 04/16/2021
 //
 //  @Brief  Write a program that initializes a string from a vector<char>.
 

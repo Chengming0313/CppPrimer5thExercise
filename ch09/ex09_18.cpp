@@ -2,7 +2,7 @@
 //  ex09_18.cpp
 //  cpp primer 5th exercise 9.18
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief  Write a program to read a sequence of strings from the standard input into
 //          a deque. Use iterators to write a loop to print the elements in the deque.

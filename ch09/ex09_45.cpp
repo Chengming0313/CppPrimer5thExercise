@@ -2,7 +2,7 @@
 //  ex09_45.cpp
 //  cpp primer 5th exercise 9.45
 //
-//  Created by aozy on 04/16/2021
+//  Created by Tang Chengming on 04/16/2021
 //
 //  @Brief  Write a funtion that takes a string representing a name and two other
 //          strings representing a prefix, such as “Mr.” or “Ms.” and a suffix,

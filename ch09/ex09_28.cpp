@@ -2,7 +2,7 @@
 //  ex09_28.cpp
 //  cpp primer 5th exercise 9.28
 //
-//  Created by aozy on 04/14/2021
+//  Created by Tang Chengming on 04/14/2021
 //
 //  @Brief  Write a function that takes a forward_list and two additional string arguments.The
 //          function should find the first string and insert the second immediately following the

@@ -2,7 +2,7 @@
 //  ex09_46.cpp
 //  cpp primer 5th exercise 9.46
 //
-//  Created by aozy on 04/16/2021
+//  Created by Tang Chengming on 04/16/2021
 //
 //  @Brief  Rewrite the previous exercise using a position and length to manage the strings.
 //          This time use only the insert function.

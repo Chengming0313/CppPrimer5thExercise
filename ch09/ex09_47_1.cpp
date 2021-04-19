@@ -2,7 +2,7 @@
 //  ex09_47_1.cpp
 //  cpp primer 5th exercise 9.47 (1)
 //
-//  Created by aozy on 04/16/2021
+//  Created by Tang Chengming on 04/16/2021
 //
 //  @Brief  Write a program that finds each numeric character
 //          and then each alphabetic character in the string "ab2c3d7R4E6".
