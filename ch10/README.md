@@ -49,7 +49,7 @@ The sum of vector<double> is 3.
 
 ### 练习 10.8
 
-`back_inserter` 定义在 <iterator> 中，而不是 <algorithm>。`back_inserter` 会改变大小是因为它重载了赋值运算符。 
+`back_inserter` 定义在 `<iterator>` 中，而不是 `<algorithm>`。`back_inserter` 会改变大小是因为它重载了赋值运算符。 
 
 ## 10.2.3 节练习
 
