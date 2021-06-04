@@ -11,8 +11,9 @@ void noMoreMemory() {
 }
 
 int main() {
-    std::set_new_handler(noMoreMemory);
-    for (int i = 0; i < 100; ++i) {
-        int *pBigDataArray = new int[100000000];
-    }
+    unsigned char ch;
+    std::cin >> ch;
+    std::cout << ( unsigned )ch << std::endl;
+    std::cin >> ch;
+    std::cout << ( unsigned )ch << std::endl;
 }

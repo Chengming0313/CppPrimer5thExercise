@@ -233,6 +233,36 @@ int *pa = new int[10];
 
 `delete[] pa;`
 
+## 12.2.2 节练习
+
+### [练习 12.26](ex12_26.cpp)
+
+### 练习 12.27 [Main](ex12_27.cpp) [TextQuery](ex12_27_1.h) [QueryResult](ex12_27_2.h)
+
+### [练习 12.28](ex12_28.cpp)
+
+### 练习 12.29
+
+> 用 `do while` 重写 `runQueries()`。解释你倾向于哪个版本。
+
+`do while`。
+
+```C++
+void runQueries(std::ifilestream &ifs) {
+    TextQuery tq(ifs);
+    do {
+        std::cout << "enter word to query or q to quit: ";
+        std::string s;
+        if (!(std::cin >> s) || s == "q") {
+            break;
+        }
+        print(std::cout, tq.query(s));
+    } while(true);
+}
+```
+
+
+
 
 
 
