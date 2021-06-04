@@ -1,6 +1,13 @@
 #ifndef CPP_PRIMER_CMT_TEXT_QUERY_H
 #define CPP_PRIMER_CMT_TEXT_QUERY_H
 
+//
+//  ex12_27_30.h
+//
+//  Created by Tang Chengming on 06/04/2021
+//
+//  @Brief  自定义版本的 TextQuery QueryResult 头文件
+
 #include <cstddef>
 #include <fstream>
 #include <memory>

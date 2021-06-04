@@ -261,6 +261,21 @@ void runQueries(std::ifilestream &ifs) {
 }
 ```
 
+## 12.3.2 节练习
+
+### 练习 12.30 同练习12.27 [Header](ex12_27_30.h) [Implementation](ex12_27_30.cpp) [Test](ex12_27_30_test.cpp)
+
+### 练习 12.31
+
+> 如果用 vector 代替 set 保存行号，会有什么差别。
+
+`vector` 没有去重的功能。需要手动去重。
+
+### 练习 12.32
+
+### 练习 12.33
+
+
 
 
 

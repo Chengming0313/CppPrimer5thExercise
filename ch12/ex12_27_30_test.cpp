@@ -1,9 +1,9 @@
 //
-//  ex12_27.cpp
+//  ex12_27_30_test.cpp
 //
-//  Created by Tang Chengming on 06/03/2021
+//  Created by Tang Chengming on 06/04/2021
 //
-//  @Brief
+//  @Brief  TextQuery QueryResult 单元测试文件
 
 #include "ex12_27_30.h"
 

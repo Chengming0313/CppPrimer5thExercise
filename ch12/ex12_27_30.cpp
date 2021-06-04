@@ -1,3 +1,10 @@
+//
+//  ex12_27_30.cpp
+//
+//  Created by Tang Chengming on 06/04/2021
+//
+//  @Brief  自定义版本的 TextQuery QueryResult 实现文件
+
 #include "ex12_27_30.h"
 
 #include <algorithm>
@@ -5,6 +12,7 @@
 #include <iostream>
 #include <string>
 
+// 构造函数
 TextQuery::TextQuery(std::ifstream &ifs) : pContext_(std::make_shared<std::vector<std::string>>()) {
     Lineno lineno{ 0 };
     for (std::string line; std::getline(ifs, line); ++lineno) {
@@ -25,6 +33,7 @@ TextQuery::TextQuery(std::ifstream &ifs) : pContext_(std::make_shared<std::vecto
     }
 }
 
+// 查询 key 在文章中出现的次数、行号
 QueryResult TextQuery::query(std::string const &key) const {
     static std::shared_ptr<std::set<Lineno>> noData = std::make_shared<std::set<Lineno>>();
     if (timesMap_.find(key) != timesMap_.cend()) {
@@ -42,6 +51,7 @@ inline std::string makePlural(std::string const &str, std::size_t times, std::st
     return times > 1 ? str + end : str;
 }
 
+// 向 os 中打印 qr
 std::ostream &print(std::ostream &os, QueryResult const &qr) {
     os << qr.key_ << " occurs " << qr.times_ << makePlural(" time", qr.times_, "s") << "\n";
     for (auto const &lineno : *(qr.pLinenoSet_.get())) {
