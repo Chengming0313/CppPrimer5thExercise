@@ -41,11 +41,6 @@ public:
     std::string &      back();
     std::string const &back() const;
 
-    // exercise 12.9
-    StrBlobPtr begin() {
-        return StrBlobPtr(*this);
-    }
-
 private:
     std::shared_ptr<std::vector<std::string>> _data;
     void                                      check(SizeType index, std::string const &msg) const;

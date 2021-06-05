@@ -48,7 +48,7 @@ i 的类型为 `std::vector<std::string>::size_type`, 是无符号整数. 即使
 
 ### 练习 12.5
 
-> 我们未编写接受一个 intializer_list explicit 参数的构造函数. 讨论这个设计策略的优点和缺点.
+> 我们未编写接受一个 initializer_list explicit 参数的构造函数. 讨论这个设计策略的优点和缺点.
 
 如果构造函数是 `explicit` 的, 这意味着 `{}` 不能自动转化成 `StrBlob`, 这与 `std::vector` 的设计相悖.
 
@@ -201,7 +201,7 @@ typedef unique_ptr<int> IntP;
 没有意义, 因为 `unique_ptr` 不能拷贝和赋值, 需要通过 `release` 转移所有权, 而 `shared_ptr` 可以拷贝和赋值,
 直接就能共享所有权.
 
-### 练习 12.19 [Header](ex12_19.h) [Implementation](ex12_19.cpp) [Test](ex12_19_test.cpp)
+### 练习 12.19 [Header](ex12_19.h) [Implementation](ex12_19.h) [Test](ex12_19_test.cpp)
 
 ### [练习 12.20](ex12_20.cpp)
 
@@ -211,7 +211,7 @@ typedef unique_ptr<int> IntP;
 
 ```C++
 std::string &deref() const {
-    return (*check(curr, "derefenrence pass end ))[curr];
+    return (*check(curr, "dereference pass end ))[curr];
 }
 ```
 
@@ -237,7 +237,7 @@ int *pa = new int[10];
 
 ### [练习 12.26](ex12_26.cpp)
 
-### 练习 12.27 [Main](ex12_27.cpp) [TextQuery](ex12_27_1.h) [QueryResult](ex12_27_2.h)
+### 练习 12.27 [Test](ex12_27_30_test.cpp) [TextQuery](ex12_27_30.h) [QueryResult](ex12_27_30.h)
 
 ### [练习 12.28](ex12_28.cpp)
 

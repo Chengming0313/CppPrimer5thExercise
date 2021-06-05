@@ -22,7 +22,7 @@ void runQueries(std::ifstream &ifs) {
 }
 
 int main() {
-    std::ifstream ifs("CppPrimer5th/ch12/data/ex12_27.in");
+    std::ifstream ifs("../../ch12/data/ex12_27_30.in");
     runQueries(ifs);
     return 0;
 }
