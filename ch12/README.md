@@ -271,9 +271,9 @@ void runQueries(std::ifilestream &ifs) {
 
 `vector` 没有去重的功能。需要手动去重。
 
-### 练习 12.32
+### 练习 12.32 [Header](ex12_32.h) [Implementation](ex12_32.cpp) [Test](ex12_32_test.cpp)
 
-### 练习 12.33
+### 练习 12.33 [Header](ex12_33.h) [Implementation](ex12_33.cpp) [Test](ex12_33_test.cpp)
 
 
 
