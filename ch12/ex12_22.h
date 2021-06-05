@@ -84,7 +84,7 @@ class ConstStrBlobPtr {
 public:
     // 构造函数
     ConstStrBlobPtr() : _curr(0) {}
-    ConstStrBlobPtr(StrBlob const &strBlob, std::size_t sz = 0) : _wptr(strBlob._data), _curr(sz) {}
+    explicit ConstStrBlobPtr(StrBlob const &strBlob, std::size_t sz = 0) : _wptr(strBlob._data), _curr(sz) {}
 
     // 解引用
     // exercise 12.22
@@ -118,10 +118,10 @@ private:
     std::size_t _curr;  // 在数组中当前位置
 };
 
-ConstStrBlobPtr StrBlob::cbegin() const {
+inline ConstStrBlobPtr StrBlob::cbegin() const {
     return ConstStrBlobPtr(*this);
 }
-ConstStrBlobPtr StrBlob::cend() const {
+inline ConstStrBlobPtr StrBlob::cend() const {
     return ConstStrBlobPtr(*this, size());
 }
 

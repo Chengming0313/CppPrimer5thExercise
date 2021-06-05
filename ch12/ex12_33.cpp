@@ -1,11 +1,12 @@
 //
-//  ex12_27_30.cpp
+//  ex12_33.cpp
 //
-//  Created by Tang Chengming on 06/04/2021
+//  Created by Tang Chengming on 2021/6/5.
 //
-//  @Brief  自定义版本的 TextQuery QueryResult 实现文件
+//  @Brief  
+//
 
-#include "ex12_27_30.h"
+#include "ex12_33.h"
 
 #include <algorithm>
 #include <cctype>
@@ -20,8 +21,8 @@ TextQuery::TextQuery(std::ifstream &ifs) : pContext_(std::make_shared<std::vecto
         std::istringstream iss(line);
         for (std::string word; iss >> word;) {
             word.erase(
-                std::remove_if(word.begin(), word.end(), static_cast<int (*)(int)>(&std::ispunct)),
-                word.cend());
+                    std::remove_if(word.begin(), word.end(), static_cast<int (*)(int)>(&std::ispunct)),
+                    word.cend());
             // 这里必须是引用类型
             auto &ps = linenoMap_[word];
             if (!ps) {

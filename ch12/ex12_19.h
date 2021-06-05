@@ -78,7 +78,7 @@ class StrBlobPtr {
 public:
     // 构造函数
     StrBlobPtr() : _curr(0) {}
-    StrBlobPtr(StrBlob &strBlob, std::size_t sz = 0) : _wptr(strBlob._data), _curr(sz) {}
+    explicit StrBlobPtr(StrBlob &strBlob, std::size_t sz = 0) : _wptr(strBlob._data), _curr(sz) {}
 
     // 解引用
     std::string &deref() const {
@@ -94,7 +94,7 @@ public:
     }
     // op !=
     // 需要确保指向同一个 StrBlob
-    bool operator!=(StrBlobPtr const &p) { return p._curr != _curr; }
+    bool operator!=(StrBlobPtr const &p) const { return p._curr != _curr; }
 
 private:
     // 检查底层 vector 是否被销毁 以及 _curr 是否越界
@@ -105,8 +105,7 @@ private:
         if (index >= ret->size()) throw std::out_of_range(msg);
         return ret;
     }
-    std::weak_ptr<std::vector<std::string>>
-                _wptr;  // 保存一个 weak_ptr, 意味着底层 vector 可能会被销毁
+    std::weak_ptr<std::vector<std::string>> _wptr;  // 保存一个 weak_ptr, 意味着底层 vector 可能会被销毁
     std::size_t _curr;  // 在数组中当前位置
 };
 
