@@ -35,11 +35,11 @@ int main()
     cout << u2 - u << endl;  // 32
     cout << u - u2 << endl;  // 4294967264
 
-    int i = 10, i2 = 42;
-    cout << i2 - i << endl;  // 32
-    cout << i - i2 << endl;  // -32
-    cout << i - u << endl;   // 0
-    cout << u - i << endl;   // 0
+    int i_ = 10, i2 = 42;
+    cout << i2 - i_ << endl;  // 32
+    cout << i_ - i2 << endl;  // -32
+    cout << i_ - u << endl;   // 0
+    cout << u - i_ << endl;   // 0
 ```
 
 ##### Exercise 2.4
@@ -104,12 +104,12 @@ int main()
 ##### Exercise 2.9
 > 解释下列定义的含义。对于非法的定义进行修改。
 > (a)std::cin >> int input_value;
-> (b)int i = { 3.14 };
+> (b)int i_ = { 3.14 };
 > (c)double salary = wage = 9999.99; 
-> (d)int i = 3.14;
+> (d)int i_ = 3.14;
 
 (a)int input_value; std::cin >> input_value;
-(b)int i = { 3 }; 存在丢失信息的风险
+(b)int i_ = { 3 }; 存在丢失信息的风险
 (c)double wage = 9999.99, salary = wage;
 (d)i等于3，double转化为int，忽略小数部分。
 
@@ -160,11 +160,11 @@ local_str "", 默认初始化
 ##### Exercise 2.13
 > 下面程序中j的值是多少
 ```C++
-int i = 42;
+int i_ = 42;
 int main()
 {
-    int i = 100;
-    int j = i;
+    int i_ = 100;
+    int j = i_;
 }
 ```
 
@@ -173,10 +173,10 @@ int main()
 ##### Exercise 2.14
 > 下面的程序合法吗，如果合法会输出什么？
 ```C++
-int i = 100, sum = 0;
-for (int i = 0; i != 10; ++i)
-    sum += i;
-std::cout << i << " " << sum << std::endl;
+int i_ = 100, sum = 0;
+for (int i_ = 0; i_ != 10; ++i_)
+    sum += i_;
+std::cout << i_ << " " << sum << std::endl;
 ```
 
 合法，输出为```100 45```
@@ -199,10 +199,10 @@ std::cout << i << " " << sum << std::endl;
 ##### Exercise 2.16
 > 下面哪些赋值是不合法的？为什么？
 ```
-int i = 0, &r1 = i; double d = 0, &r2 = d;
+int i_ = 0, &r1 = i_; double d = 0, &r2 = d;
 (a) r2 = 3.14159;
 (b) r2 = r1;
-(c) i = r2;
+(c) i_ = r2;
 (d) r1 = d;
 ```
 
@@ -214,9 +214,9 @@ int i = 0, &r1 = i; double d = 0, &r2 = d;
 ##### Exercise 2.17
 > 执行下面的代码段，会输出什么结果？
 ```C++
-int i, &ri = i;
-i = 5; ri = 10;
-std::cout << i << " " << ri << std::endl;
+int i_, &ri = i_;
+i_ = 5; ri = 10;
+std::cout << i_ << " " << ri << std::endl;
 ```
 
 `10 10`
@@ -242,8 +242,8 @@ p = &num2; // 修改指针的值
 ##### Exercise 2.20
 > 请叙述下面这段代码的作用
 ```C++
-int i = 42;
-int *p1 = &i; *p1 = *p1 * *p1;
+int i_ = 42;
+int *p1 = &i_; *p1 = *p1 * *p1;
 ```
 
 对i进行平方操作
@@ -251,10 +251,10 @@ int *p1 = &i; *p1 = *p1 * *p1;
 ##### Exercise 2.21
 > 请解释下列定义
 ```
-int i = 0;
-(a) double* dp = &i;
-(b) int *ip = i;
-(c) int *p = &i;
+int i_ = 0;
+(a) double* dp = &i_;
+(b) int *ip = i_;
+(c) int *p = &i_;
 ```
 
 (a) 非法，double *指针必须指向double
@@ -276,9 +276,9 @@ if (*p) // 判断p指向的值是否为0
 ##### Exercise 2.24
 > 下面代码为什么`p`合法而`lp`非法？
 ```C++
-int i = 42;
-void *p = &i;
-long *lp = &i;
+int i_ = 42;
+void *p = &i_;
+long *lp = &i_;
 ```
 
 ```void *型指针```可以指向任何类型的对象，而```long *型指针```只能指向long类型的对象
@@ -288,13 +288,13 @@ long *lp = &i;
 ##### Exercise 2.25
 > 说明下列变量的类型和值。
 ```C++
-(a) int* ip, i, &r = i;
-(b) int i, *ip = 0;
+(a) int* ip, i_, &r = i_;
+(b) int i_, *ip = 0;
 (c) int* ip, ip2;
 ```
 
-(a)ip: int *,  i: int, r: int &;
-(b)i: int, ip: int *;
+(a)ip: int *,  i_: int, r: int &;
+(b)i_: int, ip: int *;
 (c)ip: int*, ip2: int;
 
 
@@ -314,13 +314,13 @@ const int sz = cnt; // 合法
 ##### Exercise 2.27
 > 下面哪些初始化是合法的？
 ```C++
-(a)int i = -1, &r = 0;         
+(a)int i_ = -1, &r = 0;         
 (b)int *const p2 = &i2;        
-(c)const int i = -1, &r = 0;   
+(c)const int i_ = -1, &r = 0;   
 (d)const int *const p3 = &i2;  
 (e)const int *p1 = &i2;        
 (f)const int &const r2;        
-(g)const int i2 = i, &r = i;    
+(g)const int i2 = i_, &r = i_;    
 ```
 
 (a)非法，非常量引用不能引用字面值常量。
@@ -333,7 +333,7 @@ const int sz = cnt; // 合法
 ##### Exercise 2.28
 > 说明下面的定义是什么意思，挑出其中合法的。
 ```C++
-(a)int i, *const cp;       
+(a)int i_, *const cp;       
 (b)int *p1, *const p2;     
 (c)const int ic, &r = ic;  
 (d)const int *const p3;    
@@ -349,7 +349,7 @@ const int sz = cnt; // 合法
 ##### Exercise 2.29
 > 假设已有上一个练习中定义的变量，则下面哪些语句是合法的？
 ```C++
-(a)i = ic;     
+(a)i_ = ic;     
 (b)p1 = p3;    
 (c)p1 = &ic;   
 (d)p3 = &ic;   
@@ -371,7 +371,7 @@ const int sz = cnt; // 合法
 ```C++
 const int v2 = 0; int v1 = v2;
 int *p1 = &v1, &r1 = v1;
-const int *p2 = &v2, *const p3 = &i, &r2 = v2;
+const int *p2 = &v2, *const p3 = &i_, &r2 = v2;
 ```
 
 v2是顶层const，p2是底层const，p3既是顶层const又是底层const，r2是底层const
@@ -425,13 +425,13 @@ g=42; // g是一个const int型引用，不能被赋值
 ```C++
 int main()
 {
-    int i = 0, &r = i;
+    int i_ = 0, &r = i_;
     auto a = r;  // int
 
     const int ci = 0, &cr = ci;
     auto b  = ci;   // int
     auto c  = cr;   // int
-    auto d  = &i;   // int *
+    auto d  = &i_;   // int *
     auto e  = &ci;  // const int *
     auto &g = ci;   // const int &
 
@@ -455,11 +455,11 @@ int main()
 ##### Exercise 2.35
 > 判断下列定义推断出的类型是什么。
 ```C++
-const int i = 42;
-auto j = i;
-const auto &k = i; 
-auto *p = &i; 
-const auto j2 = i, &k2 = i;
+const int i_ = 42;
+auto j = i_;
+const auto &k = i_; 
+auto *p = &i_; 
+const auto j2 = i_, &k2 = i_;
 ```
 
 int j
@@ -499,11 +499,11 @@ a = 3, b = 4, c = 3, d = 3
 ```C++
 int main()
 {
-    int i        = 0;
+    int i_        = 0;
     const int ci = 0;
 
-    decltype(i) a1 = 0;  // int a1
-    auto a2        = i;  // int a2
+    decltype(i_) a1 = 0;  // int a1
+    auto a2        = i_;  // int a2
 
     decltype(ci) b1 = 0;   // const int b1
     auto b2         = ci;  // int b2

@@ -112,8 +112,8 @@ ex1_11.cpp
 > What does the following for loop do? What is the final value of sum?
 ```C++
 int sum = 0;
-for (int i = -100; i <= 100; ++i)
-    sum += i;
+for (int i_ = -100; i_ <= 100; ++i_)
+    sum += i_;
 ```
 计算-100到100的所有整数之和，sum = 0
 
@@ -124,9 +124,9 @@ for (int i = -100; i <= 100; ++i)
 int main()
 {
     int sum = 0;
-    for (int i = 50; i <= 100; ++i)
+    for (int i_ = 50; i_ <= 100; ++i_)
     {
-        sum += i;
+        sum += i_;
     }
     std::cout << "The sum from 50 to 100 inclusive is " << sum << std::endl;
 }
@@ -135,9 +135,9 @@ int main()
 ```C++
 int main()
 {
-    for (int i = 10; i >= 0; --i)
+    for (int i_ = 10; i_ >= 0; --i_)
     {
-        std::cout << i << std::endl;
+        std::cout << i_ << std::endl;
     }
     return 0;
 }
@@ -154,9 +154,9 @@ int main()
         v1       = v2;
         v2       = temp;
     }
-    for (int i = v1; i <= v2; ++i)
+    for (int i_ = v1; i_ <= v2; ++i_)
     {
-        std::cout << i << std::endl;
+        std::cout << i_ << std::endl;
     }
     return 0;
 }

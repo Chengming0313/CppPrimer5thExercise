@@ -32,19 +32,19 @@ StrBlob b1;
 `b1`: 4
 `b2` 是一个`局部自动对象 (local automatical object)`, 此时它的生命周期已经结束. 讨论它包含几个元素没有意义.
 
-### 练习 12.2 [Header](ex12_02.h) [Test](ex12_02_test.cpp)
+### 练习 12.2 [Header](ex12_02_StrBlob.h) [Test](ex12_02.cpp)
 
 ### 练习 12.3
 
 > StrBlob 需要 const 版本的 push_back 以及 pop_back 吗.
 
-不需要, `const StrBlob` 不应该修改 `vector` (实际上可以做到, `_data->pop_back()`, 不会检查 `_data` 是否是 `const`).
+不需要, `const StrBlob` 不应该修改 `vector`
 
 ### 练习 12.4
 
-> 在我们的练习函数没有检查 i 是否大于0. 为什么可以忽略.
+> 在我们的练习函数没有检查 i_ 是否大于0. 为什么可以忽略.
 
-i 的类型为 `std::vector<std::string>::size_type`, 是无符号整数. 即使传入负数, 也会隐式类型转换成无符号整数.
+i_ 的类型为 `std::vector<std::string>::size_type`, 是无符号整数. 即使传入负数, 也会隐式类型转换成无符号整数.
 
 ### 练习 12.5
 

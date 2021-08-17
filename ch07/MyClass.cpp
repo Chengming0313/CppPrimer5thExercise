@@ -15,8 +15,8 @@ int main() {
     B b;
     std::cout << a._data << '\n';
     a.print();
-    std::cout << b._data << '\n';  // error
-    b.print();                     // error
+//    std::cout << b._data << '\n';  // error
+//    b.print();                     // error
 
     return 0;
 }
