@@ -45,6 +45,8 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-### .idea
+### others
 .idea
+cmake-build-debug
+cmake-build-release
 
