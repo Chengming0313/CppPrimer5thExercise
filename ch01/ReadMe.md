@@ -1,64 +1,47 @@
+# C++ Primer 5th 第一章练习题
 
-### 1.1 节练习
-##### Exercise 1.1
-> 查阅你使用的编译器文档，确保它所使用的文件命名规定。编译并运行第2页的main程序。
+## 1.1 节练习
+
+### 练习 1.1
+> 查阅你使用的编译器文档，确定它所使用的文件命名约定。编译并运行第2页的main程序。
 ```
-g++ ex1_1.cpp -o ex1_1 -Wall
-.\ex1_1.exe
+F:\Project\CLionProjects\cpp-primer5\ch01>g++ -o ex1_1.exe ex1_1.cpp
+
+F:\Project\CLionProjects\cpp-primer5\ch01>.\ex1_1.exe
+
+F:\Project\CLionProjects\cpp-primer5\ch01>echo %ERRORLEVEL%
+0
 ```
-##### Exercise 1.2
+
+### 练习 1.2
+
 > 改写程序，让它返回-1，观察结果。
 ```
-控制台输出：
-The terminal process "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -Command F:\Project\CodeProject\CODE_CPP\CPP_Primer\ch01\ex1_2.exe" terminated with exit code: 1.
+F:\Project\CLionProjects\cpp-primer5\ch01>g++ -o ex1_2.exe ex1_2.cpp
+
+F:\Project\CLionProjects\cpp-primer5\ch01>.\ex1_2.exe
+
+F:\Project\CLionProjects\cpp-primer5\ch01>echo %ERRORLEVEL%
+-1
 ```
 
+## 1.2 节练习
 
-### 1.2 节练习
-##### Exercise 1.3
+### [练习 1.3](ex1_3.cpp)
 > 在标准输出上打印Hello World。
-```C++
-int main()
-{
-    std::cout << "Hello World" << std::endl;
-    return 0;
-}
-```
 
-##### Exercise 1.4
+### [练习 1.4](ex1_4.cpp)
+
 > 使用乘法运算符*，打印两个数的积。
-```C++
-int main()
-{
-    std::cout << "Enter two numbers" << std::endl;
-    int a = 0, b = 0;
-    std::cin >> a >> b;
-    std::cout << "The sum of " << a << " and " << b << " is " << a * b << std::endl;
-    return 0;
-}
-```
-##### Exercise 1.5
-> 重写1.2 节中的程序，将每个运算对象的输出语句放在一条独立语句中。
-```C++
-int main()
-{
-    std::cout << "Enter two numbers";
-    std::cout << std::endl;
-    int v1 = 0, v2 = 0;
-    std::cin >> v1 >> v2;
-    std::cout << "The sum of ";
-    std::cout << v1;
-    std::cout << " and ";
-    std::cout << v2;
-    std::cout << " is ";
-    std::cout << v1 + v2;
-    std::cout << std::endl;
-    return 0;
-}
-```
 
-##### Exercise 1.6
+### [练习 1.5](ex1_5.cpp)
+
+> 重写1.2 节中的程序，将每个运算对象的输出语句放在一条独立语句中。
+
+### 练习 1.6
+
 > 解释下列程序片段是否合法
+> 
 ```C++
 // 不合法，去除每一行末尾的分号。
 std::cout << "The sum of " << v1
@@ -67,8 +50,9 @@ std::cout << "The sum of " << v1
 ```
 
 
-### 1.3 节练习
-##### Exercise 1.7
+## 1.3 节练习
+### 练习 1.7
+
 > 编译一个包含不正确嵌套注释的程序，观察编译器返回的错误信息。
 ```C++
 // output: error: expected primary-expression before '/' token
@@ -80,8 +64,10 @@ int main()
 }
 ```
 
-##### Exercise 1.8
+### 练习 1.8
+
 > 指出下列哪些输出语句是合法的？
+> 
 ```C++
 // 除了第三条输出语句，都是合法的。
 std::cout << "/*";
@@ -93,18 +79,13 @@ std::cout << /* "*/" /* "/*" */;
 
 
 ### 1.4.1 节练习
-##### Exercise 1.9
-```
-ex1_9.cpp
-```
-##### Exercise 1.10
-```
-ex1_10.cpp
-```
-##### Exercise 1.11
-```
-ex1_11.cpp
-```
+
+### [练习 1.9](ex1_9.cpp)
+
+### [练习 1.10](ex1_10.cpp)
+
+### [练习 1.11](ex1_11.cpp)
+
 
 
 ### 1.4.2 节练习

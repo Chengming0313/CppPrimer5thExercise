@@ -11,8 +11,6 @@ add_executable(ex13_44_demo ex13_44_demo.cpp ex13_44_String.cpp)
 
 add_executable(ex13_47_demo ex13_48_demo.cpp ex13_44_String.cpp)
 
-add_executable(test test.cpp)
-
 add_executable(HasPtrDemo1 HasPtrDemo1.cpp)
 add_executable(HasPtrDemo2 HasPtrDemo2.cpp)
 

@@ -6,6 +6,7 @@
 //  @Brief
 //          ex13.49 添加 move ctor, move op=
 //          ex13.50 为 move ctor, move op= 添加一条输出语句
+//          ex14.7 定义输出运算符
 //
 
 #ifndef CPP_PRIMER5_EX13_44_STRING_H
@@ -13,8 +14,10 @@
 
 #include <cstddef>
 #include <memory>
+#include <iostream>
 
 class String {
+    friend std::ostream &operator<<(std::ostream &, String const &);
 public:
     // ------------------------- 构造函数 -------------------------
     String() : size_(0), capacity_(0), data_(nullptr) {}

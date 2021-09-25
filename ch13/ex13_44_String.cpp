@@ -147,3 +147,10 @@ void String::printInfo(char const *prefix) {
     }
     std::cout << std::endl;
 }
+
+std::ostream &operator<<(std::ostream &os, String const &rhs) {
+    for (int i = 0; i < rhs.size_; ++i) {
+        os << *(rhs.data_ + i);
+    }
+    return os;
+}
